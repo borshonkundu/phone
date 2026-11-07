@@ -1,0 +1,15 @@
+PasteDialer APK build instructions (বাংলা)
+
+এই প্রজেক্টের minSdk 21, তাই Android 5.1.1 (API 22)-এ ইনস্টল হওয়ার লক্ষ্য রাখা হয়েছে।
+
+GitHub Actions দিয়ে APK বানানোর নিয়ম:
+1. GitHub-এ নতুন একটি repository তৈরি করুন।
+2. এই ZIP-এর ভেতরের PasteDialer ফোল্ডারের সব ফাইল repository-র মূল জায়গায় upload করুন (ফোল্ডারটি নিজে nested অবস্থায় নয়)।
+3. উপরের Actions ট্যাবে যান এবং Build PasteDialer APK workflow নির্বাচন করুন।
+4. Run workflow চাপুন। Build সফল হলে workflow run-এর নিচে Artifacts থেকে PasteDialer-debug ডাউনলোড করুন।
+5. ZIP extract করে app-debug.apk ফোনে পাঠিয়ে install করুন। Unknown apps থেকে install অনুমতি দিতে হতে পারে।
+
+সতর্কতা:
+- এখানে Android SDK/Gradle build environment নেই, তাই এই পরিবেশে APK compile ও device-test করা সম্ভব হয়নি।
+- Android 5.1.1-এ সাধারণ dial/call function চলার কথা; default dialer, in-call screen ও call recording-এর কিছু সুবিধা Android version/carrier/device-এর উপর নির্ভর করবে।
+- কল রেকর্ড করার আগে অপর পক্ষের সম্মতি এবং স্থানীয় আইন মেনে চলুন।

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PasteDialer</string>
+    <string name="hint_search">নাম/নম্বর সার্চ করুন বা পেস্ট করুন</string>
+    <string name="paste">পেস্ট</string>
+    <string name="call">কল করুন</string>
+    <string name="default_dialer">ডিফল্ট ডায়ালার</string>
+    <string name="sd_folder">এসডি ফোল্ডার</string>
+    <string name="auto_record">কল রিসিভ হলে অটো রেকর্ড</string>
+    <string name="answer">রিসিভ</string>
+    <string name="mute">মিউট</string>
+    <string name="speaker">স্পিকার</string>
+    <string name="record">রেকর্ড</string>
+    <string name="hangup">কল কেটে দিন</string>
+</resources>

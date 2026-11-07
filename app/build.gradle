@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.pastedialer.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.pastedialer.app"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+// ইচ্ছা করেই কোনো বাইরের লাইব্রেরি নেই: শুধু Android framework API ব্যবহার করা হয়েছে।
+// ফলে APK ছোট থাকে এবং ১GB RAM-এ দ্রুত চলে।
+dependencies {
+}
